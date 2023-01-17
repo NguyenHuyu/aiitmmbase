@@ -1,0 +1,8 @@
+export { default as Home } from "../pages/Home/Home.jsx" 
+export { default as Introduce } from "../pages/Introduce/Introduce" 
+export { default as Train } from "../pages/Train/Train" 
+export { default as TrainCourse } from "../pages/TrainCourse/TrainCourse" 
+export { default as TrainDetails } from "../pages/TrainDetails/TrainDetails" 
+export { default as Science } from "../pages/Science/Science" 
+export { default as Contact } from "../pages/Contact/Contact"
+export { default as Cooperate } from "../pages/Cooperate/Cooperate" 

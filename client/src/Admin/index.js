@@ -1,0 +1,5 @@
+export { default as ContactList } from "../Admin/ListGetContact/ListContact"
+export { default as HomeAdmin } from "../Admin/HomeAdmin/HomeAdmin"
+export { default as ListHomeLeft } from "../Admin/ListHomeLeft/ListHomeLeft"
+export { default as ListHomeRight } from "../Admin/ListHomeRight/ListHomeRight"
+export { default as Login } from "../Admin/LoginHidden/Login"
