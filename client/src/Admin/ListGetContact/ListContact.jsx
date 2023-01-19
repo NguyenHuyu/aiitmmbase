@@ -1,21 +1,20 @@
 import React ,{ useEffect, useState}  from 'react';
 import axios from 'axios';
-
 import './_ListContact.scss'
 import Option from '../../components/OptionAdmin/Option';
 const ListContact = () => {
   const [lists, setLists] = useState([])
 
   useEffect(()=>{
-    axios.get("/form/getForm")
+    axios.get("http://localhost:5000/api/contacts/getform")
       .then((response)=>{
         setLists(response.data)
     })
   },[])
 
   const handleDelted = (id) =>{
-    axios.delete(`/form/deleteForm/${id}`)
-    
+    axios.delete(`http://localhost:5000/api/contacts/deleteform/${id}`)
+    window.location.reload()
   }
 
   return (

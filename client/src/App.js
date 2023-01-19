@@ -2,9 +2,7 @@ import React, {} from "react"
 import {Routes, Route} from "react-router-dom" 
 import './_base.scss'
 import { Home, Introduce, Train, TrainCourse, TrainDetails, Science, Contact, Cooperate} from "./pages/index"
-import { ContactList, HomeAdmin, ListHomeLeft, ListHomeRight } from "./Admin/index"
-
-
+import { ContactList, HomeAdmin, ListCourse, ListHomeLeft, ListHomeRight, ListTraining } from "./Admin/index"
 
 function App() {
   return (
@@ -14,14 +12,21 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="gioi-thieu" element={<Introduce />} />
+            
             <Route path="dao-tao" element={<Train />} />
-            <Route path="dao-tao/e" element={<TrainCourse />} />
+
+            <Route path="dao-tao/details" element={<TrainCourse />} />
             <Route path="dao-tao/khoa-hoc" element={<TrainDetails />} />
+
             <Route path="nghien-cuu-khoa-hoc" element={<Science />} />
             <Route path="hop-tac" element={<Cooperate />} />
             <Route path="lien-he" element={<Contact />} />
+
             <Route path="admin" element={<HomeAdmin/>} />
+
             <Route path="admin/contact-list" element={< ContactList />} />
+            <Route path="admin/daotao-list" element={< ListTraining />} />
+            <Route path="admin/khoahoc-list" element={< ListCourse />} />
             <Route path="admin/dienbien-list" element={< ListHomeLeft />} />
             <Route path="admin/facebook-list" element={<ListHomeRight/> } />
           </Route>

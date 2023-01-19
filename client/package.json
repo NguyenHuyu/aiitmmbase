@@ -18,6 +18,8 @@
     "react-toastify": "^9.1.1",
     "sass": "^1.57.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "timeago.js": "^4.0.2",
+    "timeagojs": "^1.0.0",
     "web-vitals": "^2.1.0",
     "yup": "^0.32.11"
   },
@@ -49,5 +51,5 @@
     "autoprefixer": "^9",
     "postcss": "^7"
   },
-  "proxy": "http://localhost:5000/api"
+  "proxy": "http://localhost:5000/"
 }

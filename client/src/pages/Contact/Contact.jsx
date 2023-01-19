@@ -11,7 +11,7 @@ const Contact = () => {
   const [contents, setContents] = useState("")
 
   const handleSubmit = () =>{
-    axios.post("/form/postForm", {
+    axios.post("http://localhost:5000/api/contacts/postform", {
       name:name,
       email:email,
       phone:phone,
@@ -25,7 +25,7 @@ const Contact = () => {
   }
   
   useEffect(()=>{
-    axios.get("/form/getForm")
+    axios.get("http://localhost:5000/api/contacts/getform")
       .then((response)=>{
         console.log(response)
         
