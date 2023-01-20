@@ -20,7 +20,6 @@ mongoose.connect(MONGO,{
     useUnifiedTopology: true
 })
 
-
 app.use("/api/contacts", FormRoutes)
 app.use("/api/events", EventRoutes)
 app.use("/api/facebooks", FacebookRoutes)

@@ -3,6 +3,8 @@ import LogoSIU from "../../assets/Logo Đại Học Quốc Tế Sài Gòn - SIU.
 import LogoAIIT from "../../assets/logo.png"
 import VN from "../../assets/vi.png"
 import EN from "../../assets/en.png"
+import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
 
 import {FaTwitter,FaFacebook,FaMailBulk,FaInstagramSquare} from "react-icons/fa"
 import './_Header.scss'
@@ -30,11 +32,36 @@ const Header = () => {
               </div>
         </div>
         <div className='space-y-10 flex flex-col items-center'>
-          <div className=' flex gap-4'>
-            <FaTwitter className='xl:text-2xl'/>
-            <FaFacebook className='xl:text-2xl'/>
-            <FaMailBulk className='xl:text-2xl'/>
-            <FaInstagramSquare className='xl:text-2xl'/>
+          <div 
+            className=' flex gap-4'>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }} 
+              whileTap={{ scale: 0.2 }}>
+              <FaTwitter className='xl:text-2xl'/>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }} 
+              whileTap={{ scale: 0.2 }}>
+              <FaFacebook className='xl:text-2xl'/>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }} 
+              whileTap={{ scale: 0.2 }}>
+              <FaMailBulk className='xl:text-2xl'/>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }} 
+              whileTap={{ scale: 0.2 }}>
+              <FaInstagramSquare className='xl:text-2xl'/>
+            </motion.div>
           </div>
           <div className='flex gap-4'>
               <img src={VN} alt="" className='w-6 ' />

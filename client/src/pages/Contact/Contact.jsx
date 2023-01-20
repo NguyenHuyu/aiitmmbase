@@ -3,6 +3,7 @@ import axios from "axios"
 import {ToastContainer, toast} from "react-toastify"
 
 import './_Contact.scss'
+import { Header } from '../../components';
 const Contact = () => {
 
   const [name, setName] = useState("")
@@ -33,13 +34,10 @@ const Contact = () => {
   },[])
 
   return (
-    <div className='containerContact bg-gray-600'>
+    <>
+      <Header/>
+      <div className='containerContact bg-gray-600'>
       <div className='wrapperContact'>
-      {/* <style>
-  .login_img_section {
-  background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url(https://images.unsplash.com/photo-1650825556125-060e52d40bd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) center center;
-}
-</style> */}
         <div className="h-screen flex">
           <div className="hidden lg:flex w-full lg:w-1/2 login_img_section
           justify-around items-center">
@@ -51,6 +49,8 @@ const Contact = () => {
           </div>
           <div className="flex w-full lg:w-1/2 justify-center items-center bg-white space-y-8">
             <div className="w-full px-8 md:px-32 lg:px-24">
+
+              
             <form 
               className="rounded-md shadow-2xl p-5" 
               onSubmit={handleSubmit}>
@@ -119,7 +119,8 @@ const Contact = () => {
           </div>
       </div>          
       </div>
-    </div>
+    </div>  
+    </>
   );
 }
 

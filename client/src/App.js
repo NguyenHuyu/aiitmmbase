@@ -3,11 +3,12 @@ import {Routes, Route} from "react-router-dom"
 import './_base.scss'
 import { Home, HomeDetails, Introduce, IntroduceDetails, TrainCourse, TrainCourseDetails, TrainDetails, Science, Contact, Cooperate,  ScienceDetails, TrainDetailsDetails} from "./pages/index"
 import { ContactList, HomeAdmin, ListCourse, ListHomeLeft, ListHomeRight, ListTraining } from "./Admin/index"
-
+import { AnimatePresence } from "framer-motion"
 
 function App() {
   return (
-    <div className="app">
+    <AnimatePresence exitBeforeEnter>
+      <div className="app">
       <container className="app__container">
         <Routes>  
           <Route path="/">
@@ -40,6 +41,7 @@ function App() {
         </Routes>
       </container>
     </div>
+    </AnimatePresence>
   );
 }
 
