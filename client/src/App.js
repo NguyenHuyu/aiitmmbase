@@ -17,7 +17,6 @@ function App() {
             <Route path="gioi-thieu" element={<Introduce />} />
             <Route path="gioi-thieu/:id" element={<IntroduceDetails />} />
 
-            
             <Route path="dao-tao/details" element={<TrainDetails />} />
             <Route path="dao-tao/details/:id" element={<TrainDetailsDetails />} />
             
