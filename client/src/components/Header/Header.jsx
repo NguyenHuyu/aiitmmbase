@@ -6,61 +6,64 @@ import EN from "../../assets/en.png"
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 
-import {FaTwitter,FaFacebook,FaMailBulk,FaInstagramSquare} from "react-icons/fa"
+import {FaTwitter,FaFacebook,FaMailBulk,FaInstagram} from "react-icons/fa"
 import './_Header.scss'
 const Header = () => {
-  return (
+  return (  
     <div className='bg-gradient-to-r from-bgHFto via-gray-300 to-gbHFfrom'>
       <div className='headerContainer 
-                      xl:max-w-4xl 
-                      lg:max-w-xl 
-                      md:max-w-md
+                      xl:max-w-5xl 
+                      lg:max-w-2xl 
+                      md:max-w-2xl
                       sm:max-w-full 
-                      xl:h-36 sm:h-32 mx-auto flex justify-between items-center'>
+                      sm:px-2
+                      xl:h-40 sm:h-32 mx-auto flex justify-between items-center'>
         <div className='flex items-center'>
               <div className=''>
-                <img 
+                <Link to="/"><img 
                     src={LogoSIU} 
                     alt="" 
                     className='xl:w-32 sm:w-24'/>
+                </Link>
               </div>
               <div>
-                <img 
+                <Link to="/"><img 
                   src={LogoAIIT} 
                   alt="" 
                   className='xl:w-36 sm:w-16'/>
+                </Link>
               </div>
         </div>
         <div className='space-y-10 flex flex-col items-center'>
           <div 
-            className=' flex gap-4'>
+            className=' flex gap-4 text-yellow-100'>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaTwitter className='xl:text-2xl'/>
+              <FaTwitter className='xl:text-2xl text-blue-500'/>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaFacebook className='xl:text-2xl'/>
+              <FaFacebook className='xl:text-2xl text-blue-600'/>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaMailBulk className='xl:text-2xl'/>
+              <FaMailBulk className='xl:text-2xl text-green-500 '/>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaInstagramSquare className='xl:text-2xl'/>
+              <FaInstagram className='xl:text-2xl text-red-400'/>
             </motion.div>
           </div>
           <div className='flex gap-4'>

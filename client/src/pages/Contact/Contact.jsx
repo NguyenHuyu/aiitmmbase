@@ -3,7 +3,6 @@ import axios from "axios"
 import {ToastContainer, toast} from "react-toastify"
 
 import './_Contact.scss'
-import { Header } from '../../components';
 const Contact = () => {
 
   const [name, setName] = useState("")
@@ -35,8 +34,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header/>
-      <div className='containerContact bg-gray-600'>
+      <div className='containerContact bg-gray-600 overflow-hidden'>
       <div className='wrapperContact'>
         <div className="h-screen flex">
           <div className="hidden lg:flex w-full lg:w-1/2 login_img_section

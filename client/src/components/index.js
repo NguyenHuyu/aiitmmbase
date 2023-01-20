@@ -6,4 +6,6 @@ export { default as Footer} from "../components/Footer/Footer"
 
 export { default as Navbar} from "../components/Navbar/Navbar"
 
+export { default as MainText} from "../components/MainText/MainText"
+
 export { default as OptionAdmin} from "../components/OptionAdmin/Option"

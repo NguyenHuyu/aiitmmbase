@@ -4,12 +4,15 @@ import './_base.scss'
 import { Home, HomeDetails, Introduce, IntroduceDetails, TrainCourse, TrainCourseDetails, TrainDetails, Science, Contact, Cooperate,  ScienceDetails, TrainDetailsDetails} from "./pages/index"
 import { ContactList, HomeAdmin, ListCourse, ListHomeLeft, ListHomeRight, ListTraining } from "./Admin/index"
 import { AnimatePresence } from "framer-motion"
+import { Footer, Header, Navbar } from "./components/index"
 
 function App() {
   return (
     <AnimatePresence exitBeforeEnter>
       <div className="app">
       <container className="app__container">
+        <Header/>
+        <Navbar/>
         <Routes>  
           <Route path="/">
             <Route index element={<Home />} />
@@ -39,6 +42,7 @@ function App() {
             <Route path="admin/facebook-list" element={<ListHomeRight/> } />
           </Route>
         </Routes>
+        <Footer/>
       </container>
     </div>
     </AnimatePresence>
