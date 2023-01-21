@@ -59,6 +59,7 @@ const ListHomeLeft = () => {
           accept="image/"
           onChange={handleImage}
           required
+          name="Access-Control-Allow-Origin"
           className="bg-gray-600" />
         <input 
           type="text"  
@@ -67,12 +68,14 @@ const ListHomeLeft = () => {
           className="bg-gray-600" placeholder="Title:"/>
         <input 
           type="text"  
+          name="Access-Control-Allow-Origin"
           required
           onChange={e => setDesc(e.target.value)}
           className="bg-gray-600" placeholder="Desc:"/>
         <input 
           type="text"  
           required
+          name="Access-Control-Allow-Origin"
           onChange={e => setContents(e.target.value)}
           className="bg-gray-600" placeholder="Contents"/>
           <button type="submit" className='border border-red-900 p-2'>SAVE</button>

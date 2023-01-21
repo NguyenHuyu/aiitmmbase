@@ -12,9 +12,9 @@ const Header = () => {
   return (  
     <div className='bg-gradient-to-r from-bgHFto via-gray-300 to-gbHFfrom'>
       <div className='headerContainer 
-                      xl:max-w-5xl 
-                      lg:max-w-2xl 
-                      md:max-w-2xl
+                      xl:max-w-7xl 
+                      lg:max-w-5xl 
+                      md:max-w-5xl
                       sm:max-w-full 
                       sm:px-2
                       xl:h-40 sm:h-32 mx-auto flex justify-between items-center'>
@@ -30,7 +30,7 @@ const Header = () => {
                 <Link to="/"><img 
                   src={LogoAIIT} 
                   alt="" 
-                  className='xl:w-36 sm:w-16'/>
+                  className='xl:w-40 sm:w-16'/>
                 </Link>
               </div>
         </div>

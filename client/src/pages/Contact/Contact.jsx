@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios"
 import {ToastContainer, toast} from "react-toastify"
-
+import anhmap from "../../assets/Anhmaps.png"
 import './_Contact.scss'
 const Contact = () => {
 
@@ -41,14 +41,13 @@ const Contact = () => {
           justify-around items-center">
             <div className="bg-black opacity-20 inset-0 z-0"></div>
             <div className="w-full mx-auto px-20 flex-col items-center space-y-6">
-              <h1 className="text-white font-bold text-4xl font-sans">Simple App</h1>
-              <p className="text-white mt-1">The simplest app to use</p>
+              <h1 className="text-white font-bold text-4xl font-sans">Địa Điểm</h1>
+              <p className="text-white mt-1">Nằm trong khuôn viên Trường Y khoa Yong Loo Lin ở NUS, CSI nằm trên 3 tầng tại Trung tâm Y học Dịch thuật. Nó có vị trí lý tưởng đối diện với Bệnh viện Đại học Quốc gia 1.000 giường và gần các viện nghiên cứu quan trọng khác như A*Star tại Biopolis, Trường Y khoa Cao học Duke-NUS và Bệnh viện Đa khoa Singapore. Có thể dễ dàng đến các địa điểm này thông qua ga xe lửa Kent Ridge chỉ cách CSI một quãng đi bộ ngắn và tạo điều kiện thuận lợi cho việc trao đổi kiến ​​thức</p>
+              <img src={anhmap} alt="" className='rounded-sm' />
             </div>
           </div>
           <div className="flex w-full lg:w-1/2 justify-center items-center bg-white space-y-8">
             <div className="w-full px-8 md:px-32 lg:px-24">
-
-              
             <form 
               className="rounded-md shadow-2xl p-5" 
               onSubmit={handleSubmit}>

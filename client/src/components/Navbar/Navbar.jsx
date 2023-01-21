@@ -11,8 +11,8 @@ const Navbar = () => {
                       lg:max-w-2xl 
                       md:max-w-md
                       sm:max-w-full 
-                      sm:h-8 mx-auto xl:h-10 flex items-center 
-                      justify-center xl:gap-4 sm:gap-1 font-medium 
+                      sm:h-8 mx-auto xl:h-14 flex items-center 
+                      justify-center xl:gap-10 sm:gap-1 font-medium 
                       cursor-pointer text-white'
       >
         <Link to="/">
