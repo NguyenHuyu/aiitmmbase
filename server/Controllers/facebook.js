@@ -1,7 +1,6 @@
 import Facebook from "../Models/Facebook.js";
 import cloudinary from "../Utils/cloudinary.js";
 
-
 export const postFace =  async(req, res)=>{
     const {title, desc, image } = req.body
     try {

@@ -36,34 +36,34 @@ const Header = () => {
         </div>
         <div className='space-y-10 flex flex-col items-center'>
           <div 
-            className=' flex gap-4 text-yellow-100'>
+            className=' flex gap-4 '>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaTwitter className='xl:text-2xl text-blue-500'/>
+              <FaTwitter className='xl:text-2xl'/>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaFacebook className='xl:text-2xl text-blue-600'/>
+              <FaFacebook className='xl:text-2xl '/>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaMailBulk className='xl:text-2xl text-green-500 '/>
+              <FaMailBulk className='xl:text-2xl  '/>
             </motion.div>
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }} 
               whileTap={{ scale: 0.2 }}>
-              <FaInstagram className='xl:text-2xl text-red-400'/>
+              <FaInstagram className='xl:text-2xl '/>
             </motion.div>
           </div>
           <div className='flex gap-4'>

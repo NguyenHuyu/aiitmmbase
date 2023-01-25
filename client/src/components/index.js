@@ -10,6 +10,10 @@ export { default as CardEvents} from "../components/CardEvents/CardEvents"
 
 export { default as CardFacebook} from "../components/CardFacebook/CardFacebook"
 
+export { default as SCard} from "../components/CardScience/SCard"
+
 export { default as MainText} from "../components/MainText/MainText"
 
 export { default as OptionAdmin} from "../components/OptionAdmin/Option"
+
+export { default as NotFound} from "../components/NotFound/NotFound"

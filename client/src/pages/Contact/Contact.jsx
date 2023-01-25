@@ -1,10 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import axios from "axios"
 import {ToastContainer, toast} from "react-toastify"
 import anhmap from "../../assets/Anhmaps.png"
+import {FiSend} from "react-icons/fi"
+
 import './_Contact.scss'
 const Contact = () => {
-
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
@@ -23,22 +24,13 @@ const Contact = () => {
       toast("Đã gửi!")
     }
   }
-  
-  useEffect(()=>{
-    axios.get("http://localhost:5000/api/contacts/getform")
-      .then((response)=>{
-        console.log(response)
-        
-    })
-  },[])
-
   return (
     <>
       <div className='containerContact bg-gray-600 overflow-hidden'>
       <div className='wrapperContact'>
         <div className="h-screen flex">
           <div className="hidden lg:flex w-full lg:w-1/2 login_img_section
-          justify-around items-center">
+                          justify-around items-center">
             <div className="bg-black opacity-20 inset-0 z-0"></div>
             <div className="w-full mx-auto px-20 flex-col items-center space-y-6">
               <h1 className="text-white font-bold text-4xl font-sans">Địa Điểm</h1>
@@ -49,7 +41,7 @@ const Contact = () => {
           <div className="flex w-full lg:w-1/2 justify-center items-center bg-white space-y-8">
             <div className="w-full px-8 md:px-32 lg:px-24">
             <form 
-              className="rounded-md shadow-2xl p-5" 
+              className="rounded-md shadow-2xl p-5 " 
               onSubmit={handleSubmit}>
               <h1 className="text-gray-800 font-bold text-2xl mb-1">Vui lòng nhập thông tin liên hệ, cảm ơn!</h1>
               <div className="flex items-center border-2 mb-8 py-2 px-3 rounded-2xl">
@@ -109,7 +101,15 @@ const Contact = () => {
                   required={true}
                   onChange={(e) => {setContents(e.target.value)}}/>
               </div>
-              <button type="submit" onClick={notify} className="block w-full bg-indigo-600 mt-5 py-2 rounded-2xl hover:bg-indigo-700 hover:-translate-y-1 transition-all duration-500 text-white font-semibold mb-2">Gửi Thông Tin</button> 
+              <button 
+                type="submit" 
+                onClick={notify} 
+                className="btn ">
+                <div className='btn__wrapper'>
+                  <FiSend className='i'/>
+                </div>
+                <span>Gửi</span>
+              </button> 
             </form>
             <ToastContainer className="absolute"/>
             </div>

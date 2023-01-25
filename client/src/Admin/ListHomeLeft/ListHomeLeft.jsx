@@ -10,7 +10,7 @@ const ListHomeLeft = () => {
   const [productImage, setProductImage] = useState("")
   const [title, setTitle] = useState("")
   const [desc, setDesc] = useState("")
-  const [contents, setContents] = useState("")
+
 
   const handleImage = (e) =>{
       const file = e.target.files[0]
@@ -27,10 +27,8 @@ const ListHomeLeft = () => {
       setProductImage("")
     }
   }
-  const handleClick = (e) =>{
-    e.preventDefault()
-
-    axios.post("http://localhost:5000/api/events/postevent", {
+  const handleClick =async (e) =>{
+   await axios.post("http://localhost:5000/api/events/postevent", {
       title:title,
       desc:desc,
       image: productImage
@@ -38,20 +36,20 @@ const ListHomeLeft = () => {
   }
 
   useEffect(()=>{
-    axios.get("http://localhost:5000/api/events/getevent")
+     axios.get("http://localhost:5000/api/events/getevent")
       .then((res)=>{
           setData(res.data)
        })
  },[])
 
- const handleDelete = (id) =>{
-    axios.delete(`http://localhost:5000/api/events/deleteevent/${id}`)
+ const handleDelete =async  (id) =>{
+     await axios.delete(`http://localhost:5000/api/events/deleteevent/${id}`)
     window.location.reload()
  }
   return (
     <>
     <Option/>
-    <h1>Dữ Liệu Từ Bản Sự Kiện</h1>
+    <h1 className='text-4xl flex justify-center'>Dữ Liệu Từ Bản Sự Kiện</h1>
     <div className=" flex flex-col w-32 space-y-6  justify-center ">
       <form onSubmit={handleClick}>
         <input 
@@ -72,12 +70,12 @@ const ListHomeLeft = () => {
           required
           onChange={e => setDesc(e.target.value)}
           className="bg-gray-600" placeholder="Desc:"/>
-        <input 
+        {/* <input 
           type="text"  
           required
           name="Access-Control-Allow-Origin"
           onChange={e => setContents(e.target.value)}
-          className="bg-gray-600" placeholder="Contents"/>
+          className="bg-gray-600" placeholder="Contents"/> */}
           <button type="submit" className='border border-red-900 p-2'>SAVE</button>
       </form>
     </div>
@@ -86,10 +84,10 @@ const ListHomeLeft = () => {
     { 
       data.map((list,key) => {
       return (
-        <div key={key} className="border border-2 py-2 mb-2">
-          <div className="flex space-x-2">
-              <div> <img src={list.image.url} alt="" className='w-32'/> </div>
-              <div>
+        <div key={key} className="border-2 py-2 mb-2">
+          <div className="flex w-full flex-row">
+              <div className='basis-1/4'> <img src={list.image.url} alt="" className='w-[100%]'/> </div>
+              <div className='basis-3/4'>
                 <div className='text-red-600'>Time: {format(list.createdAt)}</div> 
                 <div className='text-red-600'>Title: {list.title}</div> 
                 <div className='text-gray-900'>Desc: {list.desc} </div>

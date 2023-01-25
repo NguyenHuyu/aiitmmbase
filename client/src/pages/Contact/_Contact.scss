@@ -1,0 +1,57 @@
+.btn{
+    font-size: 1.2rem;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    bottom: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    align-items: center;
+
+    &__wrapper{
+        .i{
+            display: block;
+            transform-origin: center center;
+        }
+        
+    }
+    span{
+        display: block;
+        margin-left: 0.3em;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover {
+        .wrapper{
+            animation: fly 0.6 ease-in-out infinite alternate ;
+
+            .i{
+                transform: translateX(1.2em) rotate(45deg) scale(1.1);
+            }
+        }
+
+        
+        .span{
+            transform: translateX(5em);
+        }
+    }
+
+    &:active{
+        transform: scale(0.95);
+    }
+
+
+}
+
+
+@keyframes fly{
+    from {
+        transform: translateY(0.1em);
+    }
+    to{
+        transform: translateY(0.1em);
+    }
+}
