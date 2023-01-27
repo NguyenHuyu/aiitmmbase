@@ -34,13 +34,13 @@ const Navbar = () => {
           </Link>
           <li className='hover:font-extrabold' >
             <li className='items-chuck hover:font-extrabold'>
-              <motion.div whileTap={{ scale: 0.7 }} >Đào Tạo</motion.div>
+              <motion.div whileTap={{ scale: 0.7 }} >Đào Tạo </motion.div>
               <ul className='items flex bg-gray-600 font-bold text-base px-2 py-2 rounded-sm' >
                 <Link to="/dao-tao/details">
                   <motion.li  
                     whileTap={{ scale: 0.7 }}  
                     className='hover:text-gray-900'
-                    >ĐÀO TẠO
+                    >ĐÀO TẠO 
                   </motion.li>
                 </Link>
                 <Link to="/dao-tao/khoa-hoc">
