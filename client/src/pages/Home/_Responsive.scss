@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper{
+    display: flex;
+    max-width: 1024px;
+    margin: 70px auto 0px auto;
+    
+     gap: 10px;
+    // dien bien
+    &_dienbien{
+      width: 800px;
+     }
+    
+     .dienbien_title,.sukien_title{
+        font-size: 20px;
+        font-weight: 600;
+        padding-bottom: 15px;
+     }
+  
+     .dienbien_wrappercontent,.sukien_wrappercontent{
+      overflow-y:scroll;
+      height: 500px;
+     &::-webkit-scrollbar{
+      width: 10px;
+     }
+     &::-webkit-scrollbar-track{
+      background: #ccc;
+     }
+     &::-webkit-scrollbar-thumb {
+      background-color: #8d887e;   
+      border-radius: 5px;      
+      border: 2px solid #ccc; 
+    }
+     }
+  
+    //  su kien
+     &_sukien{
+      width: 300px;
+     .sukien_wrappercontent{
+     
+     }
+      
+     }
+  }
+//   css 
+  .divimgcacdonvitructhuoc{
+    display: flex;
+    margin-top: 20px;
+    max-width: 600px;
+    img{
+       width: 40%;
+    }
+}
+.bodyContainer{
+    height: auto;
+}
+.xl\:mt-0{
+    padding-top: 40px;
+    margin: 0;
+}
+  
+// responsive
+
+// tablet
+@media (max-width:768px){
+    .bodyContainer{
+        height: 1250px;
+    }
+    .cacdonvitructhuoc{
+        font-size: 18px;
+    }
+    .divimgcacdonvitructhuoc{
+        max-width: 600px;
+        img{
+           width: 30%;
+        }
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 30px;
+        &_dienbien{
+            width: auto;
+            .dienbien_title{
+                text-align: center;
+            }
+        }
+        &_sukien{
+            width: auto;
+            margin-top: 20px;
+            .sukien_title{
+                text-align: center;
+            }
+        }
+        .Wrapper_SuKienCard {
+            .SuKienCard_img{
+                max-width: 350px;
+                height: 130px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
+                margin-top: 10px;
+            }
+        }
+    }
+    }
+    // mobile
+    @media (max-width:425px){
+        .bodyContainer{
+            height: 1050px;
+        }
+        .wrapper{
+            width: 90%;
+            margin-top: 0;
+            .dienbien_wrappercontent{
+                display: flex;
+                overflow-y: unset;  
+                overflow-x: scroll;
+                height: 350px;
+                scroll-snap-type: x mandatory;
+               
+                &::-webkit-scrollbar{
+                    height: 15px;
+                }
+            }
+        }
+        .DienBienCard_Wrapper{
+            flex-direction: column;
+            min-width: 100%;
+            height: 100%;
+            scroll-snap-align:start;
+                .divContent_button_xemthem{
+                width: 100px;
+                position: static;
+                margin-left: 10px;
+                
+                height: 40px;
+                } 
+                .img{
+                margin: 0;
+                width: 100%;
+                height: 180px;
+                }
+                .divContent_time,.divContent_title,.divContent_time,.divContent_description{
+                    padding: 0 10px;
+                    display:-webkit-box;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-word;
+                    
+                }
+                .divContent_time,.divContent_title{
+                    -webkit-line-clamp:1;
+                }
+    
+                .divContent_description{            
+                    -webkit-line-clamp:2;
+                }
+    
+        } 
+        .DienBienCard_Wrapper + .DienBienCard_Wrapper{
+            margin-top: 0;
+            margin-left: 10px;
+        }
+        .wrapper_sukien{
+            margin-top: 50px;
+            .sukien_wrappercontent{
+                display: flex;
+                overflow-y: unset;
+                overflow-x: scroll;
+                scroll-snap-type: x mandatory;
+                height: auto;
+                .Wrapper_SuKienCard{
+                    min-width: 100%;
+                    margin-top: 0;
+                    scroll-snap-align: start;
+                  
+                }
+                .Wrapper_SuKienCard+.Wrapper_SuKienCard{
+                    margin-left: 10px;
+                }
+            }
+        }
+        
+       
+        
+       
+    }

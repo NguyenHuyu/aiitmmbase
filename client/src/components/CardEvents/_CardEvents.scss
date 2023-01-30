@@ -1,0 +1,65 @@
+.DienBienCard_Wrapper{
+    display: flex;
+    height: 170px;
+    background-color: white;
+    // ****
+    position: relative;
+    .img{
+        flex: 3;
+        height: 100px;
+        object-fit: cover;
+        margin: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .divContent{
+        flex: 6;
+        &_time,&_title,&_description,&_button_xemthem{
+            display: block;
+            
+        }
+        &_time{
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 5px;
+        }
+        &_title{
+            display: -webkit-box;
+            font-size: 14px;
+            font-weight: 500;
+            height: 20px;
+            margin-top: 3px; 
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            margin-right: 10px;
+        }
+        &_description{
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 3px; 
+            padding-right: 10px;
+        }
+        &_button_xemthem{
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 2px 2px rgb(185, 182, 177);
+            margin-left: 30px;
+            margin-top: 10px;
+            position: absolute;
+            bottom: 20px;
+           
+        }
+
+    }
+
+}
+.DienBienCard_Wrapper+.DienBienCard_Wrapper{
+    margin-top: 10px;
+}
