@@ -34,8 +34,7 @@ const Home = () => {
        <div className='sukien_title'>Sự Kiện</div>
         <div className='sukien_wrappercontent'>
             <CardFacebook/>
-          
-           
+              
         </div>
        </div>
     </div>
