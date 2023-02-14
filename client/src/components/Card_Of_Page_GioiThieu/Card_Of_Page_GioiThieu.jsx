@@ -8,7 +8,7 @@ export const Card_Of_Page_GioiThieu = ({title,description}) => {
         <text className=' text-[#829eae] text-[13px] mt-[10px]'>
         {description}
         </text>
-        <img src={imgtrans} className=' w-[185px] h-[130px] mt-[14px]'/>
+        {/* <img src={imgtrans} className=' w-[185px] h-[130px] mt-[14px]'/> */}
     </div>
   )
 }

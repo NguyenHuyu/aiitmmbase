@@ -1,7 +1,8 @@
 import React from 'react'
 import useFetch from '../../hooks/Fetch'
 import anh from "../../assets/Ellipse20.png"
-
+import {AiTwotoneLike} from 'react-icons/ai'
+import {FaShare} from 'react-icons/fa'
 import './_CardFacebook.scss'
 const CardFacebook = () => {
   const {data} = useFetch("http://localhost:5000/api/facebooks/getface")
@@ -21,8 +22,8 @@ const CardFacebook = () => {
       <p className='SuKienCard_description'>{item.desc}</p>
       <img src={item.image.url} className='SuKienCard_img'></img>
       <div className='SuKienCard_Divlike'>
-        <span className='SuKienCard_Divlike_iconLike'>like</span>
-        <span className='SuKienCard_Divlike_iconShare'>share</span>
+        <button className='SuKienCard_Divlike_iconLike'><AiTwotoneLike style={{fontSize:'18px'}} /></button>
+        <button className='SuKienCard_Divlike_iconShare'><FaShare style={{fontSize:'18px'}}/></button>
       </div>
     </div>
       ))
