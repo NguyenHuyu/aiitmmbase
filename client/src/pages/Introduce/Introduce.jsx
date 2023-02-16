@@ -5,13 +5,14 @@ import img3 from './img3.jfif'
 import Card_Of_Page_GioiThieu from '../../components/Card_Of_Page_GioiThieu/Card_Of_Page_GioiThieu';
 import './_Introduce.scss'
 
-
-const string =`Đổi mới sáng tạo trong 5 lĩnh vực nghiên cứu sâu:
+const string =(<>tao ne <br/> tao day</>)
+const stringpvhd =`Đổi mới sáng tạo trong 5 lĩnh vực nghiên cứu sâu:
 -Trí tuệ nhân tạo, dữ liệu lớn
 -Khoa học quản lý xã hội và cộng đồng doanh nghiệp
 -Khoa học giáo dục & chuyển đổi số
 -Tài nguyên, môi trường và kinh tế biển
 -Sức khỏe và y tế.` 
+
 const Introduce = () => {
   return (
   <section className='scroll-smooth bg-[#364153] py-[30px] '>
@@ -37,7 +38,7 @@ const Introduce = () => {
             {/* div chứa 3 card */}
             <div className='mx-[auto] px-[4%] mt-[30px] w-auto 
             md:grid md:grid-cols-[repeat(3,minmax(300px,380px))] md:gap-[25px] md:mx-[15%] md:overflow-x-scroll md:snap-x
-            lg:mx-[0] lg:overflow-auto lg:justify-center '>
+            lg:mx-[0] lg:[overflow-x:unset] lg:justify-center '>
                 <Card_Of_Page_GioiThieu 
                 title='Tầm Nhìn'
                 description='Đến năm 2025, Viện AIIT sẽ trở thành một viện kiểu mẫu về kết nối thúc đẩy đổi mới sáng tạo tiên phong của SIU. Đến năm 2030 trở thành đơn vị chuyển đổi mới sáng tạo của tập đoàn GAIE.'
@@ -48,9 +49,20 @@ const Introduce = () => {
                 />
                 <Card_Of_Page_GioiThieu 
                 title="Phạm Vi Hoạt Động"
-                description={string}
-                />        
+                description={<>Đổi mới sáng tạo trong 5 lĩnh vực nghiên cứu sâu:
+                    <br/>
+                    -Trí tuệ nhân tạo, dữ liệu lớn
+                    <br/>
+                    -Khoa học quản lý xã hội và cộng đồng doanh nghiệp
+                    <br/>
+                    -Khoa học giáo dục & chuyển đổi số
+                    <br/>
+                    -Tài nguyên, môi trường và kinh tế biển
+                    <br/>
+                    -Sức khỏe và y tế.
+                </>}/>        
             </div>
+            
       </section>
   </section>
   );
