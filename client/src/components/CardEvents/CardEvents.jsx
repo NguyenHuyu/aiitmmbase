@@ -29,7 +29,7 @@ const CardEvents = () => {
           <>
           <div key={index} className='bg-white flex flex-col shadow-2xl w-[250px] mb-[15px] snap-center md:mb-0 md:w-full md:shadow-none
                                       lg:flex-row lg:h-[180px] '>
-            <img className='h-[150px] w-full object-cover lg:h-full lg:w-[200px] lg:p-[10px] ' src={item.image.url}></img>
+            <img className='h-[150px] w-full object-cover lg:h-full lg:w-[200px] lg:p-[10px] lg:pr-0 ' src={item.image.url}></img>
             <div className='flex flex-col p-[10px] lg:w-[calc(100%-200px)] '>
                   <span className='truncate font-medium text-[12px]'>{format(item.updatedAt)}</span>
                   <span className='truncate font-semibold text-[14px]'>{item.title} </span>
