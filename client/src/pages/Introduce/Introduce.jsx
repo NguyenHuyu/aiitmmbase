@@ -5,15 +5,11 @@ import img3 from './img3.jfif'
 import Card_Of_Page_GioiThieu from '../../components/Card_Of_Page_GioiThieu/Card_Of_Page_GioiThieu';
 import './_Introduce.scss'
 
-const string =(<>tao ne <br/> tao day</>)
-const stringpvhd =`Đổi mới sáng tạo trong 5 lĩnh vực nghiên cứu sâu:
--Trí tuệ nhân tạo, dữ liệu lớn
--Khoa học quản lý xã hội và cộng đồng doanh nghiệp
--Khoa học giáo dục & chuyển đổi số
--Tài nguyên, môi trường và kinh tế biển
--Sức khỏe và y tế.` 
+const string =(<>Đổi mới sáng tạo trong 5 lĩnh vực nghiên cứu sâu: <br/>-Trí tuệ nhân tạo, dữ liệu lớn<br/>-Khoa học quản lý xã hội và cộng đồng doanh nghiệp</>)
+const stringpvhd ='Đổi mới sáng tạo trong 5 lĩnh vực nghiên cứu sâu: -Trí tuệ nhân tạo, dữ liệu lớn \n-Khoa học quản lý xã hội và cộng đồng doanh nghiệp'
 
 const Introduce = () => {
+    console.log(string)
   return (
   <section className='scroll-smooth bg-[#364153] py-[30px] '>
       <section className=' flex flex-col text-center xl:flex-row xl:text-left xl:justify-center xl:mt-[20px]'>
