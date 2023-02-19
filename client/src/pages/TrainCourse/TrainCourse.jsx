@@ -5,7 +5,7 @@ import CardKhoaHoc from '../../components/CardKhoaHoc/CardKhoaHoc';
 import './_TrainCourse.scss'
 const TrainCourse = () => {
   return (
-    <div className='pt-[10px] px-[3%] md:px-[6%]'>
+    <div className='pt-[10px] px-[3%] md:px-[6%] xl:px-[10%]'>
       <h1 className='text-center text-red-600 font-[700] text-[16px]'>Tiếng Anh - Định vị bản thân trong kỷ nguyên hội nhập</h1>
       <div className='flex flex-col lg:flex-row lg:gap-[20px] xl:justify-center'>
         <img src={landmark} className='mx-[auto] mt-[10px] w-full h-[180px] object-cover md:w-[50%] md:mt-[20px] lg:h-[auto] lg:flex-[3] xl:max-w-[500px] xl:mx-[0]'/>
