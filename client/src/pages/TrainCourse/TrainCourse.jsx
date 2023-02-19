@@ -42,8 +42,7 @@ const TrainCourse = () => {
           <div className='grid grid-cols-[repeat(2,minmax(150px,300px))] gap-[10px] pb-[20px] justify-center
                           md:grid-cols-[repeat(auto-fit,minmax(150px,280px))] xl:gap-[25px]'>
               <CardKhoaHoc/>
-              <CardKhoaHoc/>
-              <CardKhoaHoc/>
+    
           </div>
       </div>
     </div>
