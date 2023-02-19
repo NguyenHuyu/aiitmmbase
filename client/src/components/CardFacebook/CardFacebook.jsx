@@ -12,7 +12,7 @@ const CardFacebook = () => {
      {
       dataReverse.map((item,index)=>(
         <>
-        <div key={index} className='flex flex-col min-w-[250px] max-w-[250px] shadow-2xl p-[10px] mb-[15px] snap-center bg-white md:mb-0 md:min-w-full md:max-w-[auto] md:shadow-none'>
+        <div key={index} className='flex flex-col relative min-w-[250px] max-w-[250px] shadow-2xl p-[10px] mb-[15px] snap-center bg-white md:mb-0 md:min-w-full md:max-w-[auto] md:shadow-none'>
             <div className='flex'>
                 <img src={anh} className=' rounded-full w-[40px] h-[40px]'/>
                 <div className='ml-[10px]'>

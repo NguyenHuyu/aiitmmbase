@@ -30,9 +30,9 @@ const CardEvents = () => {
           <div key={index} className='bg-white flex flex-col shadow-2xl w-[250px] mb-[15px] snap-center md:mb-0 md:w-full md:shadow-none
                                       lg:flex-row lg:h-[180px] '>
             <img className='h-[150px] w-full object-cover lg:h-full lg:w-[200px] lg:p-[10px] lg:pr-0 ' src={item.image.url}></img>
-            <div className='flex flex-col p-[10px] lg:w-full '>
+            <div className='flex flex-col p-[10px] w-[inherit] lg:w-full '>
                   <span className='truncate font-medium text-[12px] lg:whitespace-normal lg:truncate-1'>{format(item.updatedAt)}</span>
-                  <span className='truncate font-semibold text-[14px] lg:whitespace-normal lg:truncate-1'>{item.title} </span>
+                  <span className='truncate font-semibold text-[14px] lg:whitespace-normal lg:truncate-1'>{item.title}</span>
                   <span className='truncate-3 text-[13px]'>{item.desc}</span>
                   <Link to={`/su-kien/${item._id}`}>
                   <button className='w-[90px] h-[35px] text-[11px] mt-[5px] bg-white font-[600] border-b-[2px] border-[1px] rounded-[5px] '>
