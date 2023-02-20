@@ -34,7 +34,7 @@
         scroll-behavior: smooth;
         &::-webkit-scrollbar{
             width: 10px; //nếu thanh dọc thì width
-            height: 10px; //nếu thanh ngang thì height
+            height: 7px; //nếu thanh ngang thì height
            }
            &::-webkit-scrollbar-track{
             background: #ccc;
