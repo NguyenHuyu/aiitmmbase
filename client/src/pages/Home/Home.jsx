@@ -27,14 +27,14 @@ const Home = () => {
                                   <div className=' md:w-[55%] md:max-w-[700px] '>
                                     <h1 className=' text-center font-semibold text-gray-700 md:text-left '>DIỄN BIẾN</h1>
                                     <div className='flex gap-[25px] px-[15px] mt-[15px] overflow-x-scroll snap-x 
-                                                    md:flex-col md:overflow-y-scroll md:h-[calc(100%-45px)] md:px-0 md:overflow-x-hidden scrollbar_custom'>
+                                                    md:flex-col md:overflow-y-scroll md:h-[calc(100%-45px)] md:px-0 md:overflow-x-hidden md:scrollbar_custom'>
                                       <CardEvents/>
                                     </div>
                                   </div>
                                   <div className='md:w-[35%] md:max-w-[300px] '>
                                     <h1 className=' text-center font-semibold mt-[35px] text-gray-700 md:mt-0 md:text-left'>SỰ KIỆN</h1>
                                     <div className='flex gap-[25px] px-[15px] mt-[15px] overflow-x-scroll snap-x 
-                                                    md:flex-col md:overflow-y-scroll md:h-[calc(100%-45px)] md:px-0 md:overflow-x-hidden scrollbar_custom  '>
+                                                    md:flex-col md:overflow-y-scroll md:h-[calc(100%-45px)] md:px-0 md:overflow-x-hidden md:scrollbar_custom  '>
                                       <CardFacebook/>
                               
                                     </div>
