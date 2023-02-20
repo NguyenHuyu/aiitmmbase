@@ -6,18 +6,21 @@ const CardKhoaHoc = () => {
     {
       title:'ENGLISH SKILL',
       level:1,
-      des:'English Skills 1'
+     
     },
     {
       title:'ENGLISH SKILL',
       level:2,
-      des:'English Skills 2'
     },
     {
       title:'ENGLISH SKILL',
       level:3,
-      des:'English Skills 3'
-    }
+    },
+    {
+      title:'ENGLISH SKILL',
+      level:4,
+    },
+
   ]
 
 return (
@@ -28,7 +31,7 @@ return (
               <span className='font-[600]'>{course.title}</span>
               <span className=' font-[600]'>{course.level}</span>
           </div>
-          <h3 className='text-center text-[13px] opacity-[0.8] mt-[5px]'>{course.des + course.level}</h3>
+          <h3 className='text-center text-[13px] opacity-[0.8] mt-[5px]'>{course.title + ' ' + course.level}</h3>
       </div>
       </>)
     }))

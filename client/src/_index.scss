@@ -30,5 +30,18 @@
         text-overflow: ellipsis;
         word-break: break-word;
     }
+    .scrollbar_custom{
+        &::-webkit-scrollbar{
+            width: 10px;
+           }
+           &::-webkit-scrollbar-track{
+            background: #ccc;
+           }
+           &::-webkit-scrollbar-thumb {
+            background-color: #8d887e;    
+            border-radius: 5px;     
+            border: 2px solid #ccc;  
+          }
+    }
    
 }
